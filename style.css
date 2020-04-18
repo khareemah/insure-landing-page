@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Karla", sans-serif;
+  max-width: 1300px;
+  margin: auto;
+}
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+p {
+  max-width: 350px;
+  margin: auto;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5rem;
+  flex-wrap: wrap;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul.show {
+  flex-basis: 100%;
+}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 4px 12px;
+}
+nav li.active {
+  border: 2px solid hsl(256, 26%, 20%);
+}
+nav li a {
+  text-decoration: none;
+  color: hsla(256, 26%, 20%, 0.6);
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 5px;
+}
+nav li a:hover {
+  color: hsl(256, 26%, 20%);
+}
+nav li.active:hover {
+  background-color: hsl(256, 26%, 20%);
+}
+nav li.active a:hover {
+  color: white;
+}
+button.hamburger {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: none;
+}
+header {
+  /* background: url(images/bg-pattern-intro-left-desktop.svg) no-repeat ; */
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+header > div {
+  flex: 1;
+  color: white;
+}
+header p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  gpadding-bottom: 20px;
+}
+.intro_desktop {
+  display: block;
+  max-width: 80%;
+  margin: auto;
+  transform: translateY(90px);
+}
+.container {
+  padding: 120px 5rem 50px;
+}
+
+.main_section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main_section > article {
+  flex-basis: 30%;
+}
+.icon {
+  width: 50px;
+}
+.small_card {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 1rem 3.5rem;
+}
+button.white {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+}
+button.white:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+  font-weight: 700;
+}
+.bottom_container {
+  background-color: hsla(273, 4%, 51%, 0.1);
+  padding: 2rem 5rem;
+}
+.bottom_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.bottom_nav img {
+  padding: 5px;
+}
+footer {
+  display: flex;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+footer > div {
+  flex: 1;
+}
+footer p {
+  color: hsla(273, 4%, 51%);
+}
+footer a {
+  color: black;
+  display: block;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer a:hover {
+  color: hsl(256, 26%, 20%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+@media screen and (max-width: 775px) {
+  body {
+    text-align: center;
+  }
+
+  nav,
+  .container,
+  .bottom_container {
+    padding: 0 1.5rem;
+  }
+  nav ul {
+    display: none;
+    flex-basis: 100%;
+  }
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(270, 9%, 17%);
+    padding: 20px;
+  }
+  nav ul.show li {
+    margin-bottom: 20px;
+  }
+  nav ul.show li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400px;
+  }
+  nav ul.show li.active {
+    border: 1px solid white;
+  }
+  nav ul.show li:hover {
+    background-color: transparent;
+  }
+  p {
+    margin: auto;
+    padding: 10px;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  header {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .intro_desktop {
+    max-width: 100%;
+    transform: translateY(0);
+    margin-top: 0px;
+  }
+  button.white {
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  button.hamburger {
+    display: block;
+  }
+  .main_section > article {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .small_card {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .bottom_nav {
+    flex-direction: column;
+  }
+  .bottom_nav img {
+    margin-bottom: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > div {
+    margin-bottom: 20px;
+  }
+}
