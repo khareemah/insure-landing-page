@@ -1,1 +1,1 @@
-A frontendmentor challenge. A responsive landing page that page built with HTML, CSS and JS. Check Live preview [here](https://insure-page.netlify.app/)
+A frontendmentor challenge. A responsive landing page that was built with HTML, CSS and JS. Check Live preview [here](https://insure-page.netlify.app/)
